@@ -1,0 +1,31 @@
+@import "../../assets/styles/colors.scss";
+@import "../../assets/styles/mixins.scss";
+
+.counter {
+	@include shadow;
+	display: flex;
+	justify-content: center;
+	flex-wrap: nowrap;
+	width: 90px;
+	border-top: 1px solid $border;
+	border-left: 1px solid $border;
+	button {
+		display: flex;
+		justify-content: center;
+		height: 31px;
+		width: 31px;
+		border: none;
+		font-size: 22px;
+		text-align: center;
+		text-decoration: none;
+		background-color: $main-light;
+		color: $light;
+	}
+	span {
+		height: 31px;
+		width: 31px;
+		text-align: center;
+		line-height: 31px;
+		background-color: $light;
+	}
+}

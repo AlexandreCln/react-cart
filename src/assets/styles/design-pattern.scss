@@ -1,0 +1,23 @@
+@import './reset.css';
+@import './colors.scss';
+@import './mixins.scss';
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  background-color: $background;
+
+  h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: $main;
+  }
+  button {
+		letter-spacing: 1px;
+    cursor: pointer;
+  }
+}

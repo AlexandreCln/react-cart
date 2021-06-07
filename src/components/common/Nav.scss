@@ -1,0 +1,54 @@
+@import "../../assets/styles/colors.scss";
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	grid-template-columns: 70% auto;
+	height: 39px;
+	padding: 14px 20px;
+	background: -webkit-linear-gradient(to bottom, $main, $main-light);
+	background: linear-gradient(to bottom, $main, $main-light);
+	ul {
+		li {
+			a {
+				font-size: 16px;
+				color: $light;
+				text-decoration: none;
+			}
+			.logo {
+				height: 38px;
+			}
+		}
+	}
+	a {
+		text-decoration: none;
+		.cart  {
+			display: flex;
+			align-items: center;
+			position: relative;
+			.quantity {
+				height: 19px;
+				width: 19px;
+				font-size: 12px;
+				font-weight: bold;
+				line-height: 20px;
+				text-align: center;
+				background-color: $light;
+				color: $main;
+				border-radius: 50%;
+				position: absolute;
+				top: -3px;
+				left: -14px;
+			}
+			img {
+				width: 28px;
+			}
+			span {
+				margin-left: 5px;
+				line-height: 39px;
+				color: $light;
+			}
+		}
+	}
+}
